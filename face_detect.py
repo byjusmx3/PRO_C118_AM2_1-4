@@ -15,7 +15,7 @@ for (x,y,w,h) in faces:
        
        cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2)  
 
-       # Crop the image to save the face image.
+       # Corta la imagen pára guardar la imagen del rostro.
        roi_color = img[y:y+h, x:x+w]
        cv2.imwrite("face.jpg",roi_color)
               
